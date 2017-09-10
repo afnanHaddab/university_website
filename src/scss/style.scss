@@ -1,0 +1,72 @@
+$bg-color:#8f182e;
+$primary-color:#fff;
+$secondary-color:#333;
+$dark-overlay:rgba(0,0,0,0.7);
+$icon-size:30px;
+
+body{
+    background: $bg-color;
+    color:$primary-color;
+}
+
+.navbar{
+    border-bottom:$bg-color 3px solid;
+    opacity: 0.8;
+    background: $bg-color !important;
+    .nav-link{
+        color:$primary-color !important;
+    }
+     .nav-link:hover{
+        color:$secondary-color !important;
+    }
+}
+
+#home-section{
+    background: url(../img/home.jpeg) no-repeat;
+    min-height:700px;
+    background-size:cover;
+    background-attachment: fixed;
+
+    .dark-overlay{
+    background-color: $dark-overlay;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    min-height:700px;
+    }
+
+    .home-inner{
+        padding-top:150px;
+    }
+    .card-body{
+        background:$secondary-color; 
+        border-color:$secondary-color;
+    }
+    .card-form{
+        opacity:0.8;
+    }
+
+    .fa{
+    background:$primary-color;
+    color:$secondary-color;
+    padding:4px;
+    border-radius: 5px;
+    font-size:$icon-size;
+    }
+}
+
+#courses-section, #alumni-section,#research-section{
+    .fa{
+        color:$primary-color;
+        background:$secondary-color;
+        padding:4px;
+        border-radius: 5px;
+        font-size:$icon-size;
+    }
+}
+
+#main-footer{
+    background: $bg-color;
+}
+
